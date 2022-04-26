@@ -1,30 +1,32 @@
-import { Fragment } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import Modal from "react-modal";
 
-const Modal = ({ open, closeModal, children }) => {
+const CommonModal = ({ open, closeModal, children }) => {
+  const customStyles = {
+    content: {
+      background: "rgb(243 ,232 ,255, 1)",
+      color: "rgb(107 ,33 ,168 , 1)",
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      border: "0",
+    },
+    overlay: {
+      backgroundColor: "rgb(205, 208, 208,0.55)",
+    },
+  };
   return (
-    <Transition show={open} as={Fragment}>
-      <Dialog onClose={closeModal} className="fixed z-10 inset-0">
-        <Transition.Child
-          as={Fragment}
-          enter="ease-out duration-300"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="ease-in duration-200"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          <div className="flex items-center justify-center min-h-screen">
-            <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
-
-            <div className="relative bg-purple-200 rounded max-w-sm mx-auto py-4 px-8 text-purple-800">
-              {children}
-            </div>
-          </div>
-        </Transition.Child>
-      </Dialog>
-    </Transition>
+    <Modal
+      isOpen={open}
+      onRequestClose={closeModal}
+      ariaHideApp={false}
+      style={customStyles}
+    >
+      {children}
+    </Modal>
   );
 };
 
-export default Modal;
+export default CommonModal;

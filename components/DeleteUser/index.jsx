@@ -12,6 +12,7 @@ const DeleteUser = ({ user }) => {
   const onRemoveUser = async (e, data) => {
     e.preventDefault();
     await dispatch.users.removeUser(data);
+    closeModal();
     toast.success(`${data.name} user remove successfully`);
   };
 

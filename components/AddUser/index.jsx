@@ -1,6 +1,5 @@
 import { memo } from "react";
 import { useDispatch } from "react-redux";
-import { Dialog } from "@headlessui/react";
 import { toast } from "react-toastify";
 import useAddUser from "@/hooks/useAddUser";
 import useModal from "@/hooks/useModal";
@@ -36,10 +35,8 @@ const AddUser = () => {
       </button>
 
       <Modal open={open} closeModal={closeModal}>
-        <>
-          <Dialog.Title className="text-center mb-3 text-xl">
-            Add User
-          </Dialog.Title>
+        <div className="px-3">
+          <h1 className="text-center mb-3 text-xl">Add User</h1>
           <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
             <Input
               type="text"
@@ -69,7 +66,7 @@ const AddUser = () => {
               Add
             </button>
           </form>
-        </>
+        </div>
       </Modal>
     </>
   );

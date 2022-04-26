@@ -12,7 +12,7 @@ const Input = ({
         <label>{label}</label>
         <input
           type={type}
-          className="block w-full py-2"
+          className="block w-full py-2 border border-red-100"
           placeholder={placeholder}
           {...register(name)}
         />
