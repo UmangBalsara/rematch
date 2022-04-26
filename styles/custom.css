@@ -1,0 +1,40 @@
+.container {
+  padding: 0 0.8rem;
+  margin: 0 auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 154, 154); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 124, 124); 
+}
+
+input{
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+input:focus{
+  outline: none;
+  --tw-border-opacity: 1;
+  border-color: rgb(107 33 168 / var(--tw-border-opacity));
+}
+
+.error{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}

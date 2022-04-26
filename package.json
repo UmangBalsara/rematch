@@ -9,12 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.0",
+    "@hookform/resolvers": "^2.8.8",
+    "@rematch/core": "^2.2.0",
     "next": "12.1.5",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.30.0",
+    "react-redux": "^8.0.1",
+    "react-toastify": "^8.2.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.5",
     "eslint": "8.13.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.24"
   }
 }
