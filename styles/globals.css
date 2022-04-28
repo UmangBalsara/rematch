@@ -7,6 +7,11 @@ body {
   background-color: rgb(255, 228, 228);
 }
 
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;

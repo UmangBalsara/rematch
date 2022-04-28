@@ -41,5 +41,4 @@ input:focus{
 
 .prevent_scroll{
   overflow-y: hidden;
-  padding-right: 8px;
 }
