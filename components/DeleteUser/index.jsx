@@ -39,7 +39,7 @@ const DeleteUser = ({ user }) => {
               xmlns="http://www.w3.org/2000/svg"
               className="h-20 w-20"
               viewBox="0 0 20 20"
-              fill="red"
+              fill="rgb(220, 38, 38, 1)"
             >
               <path
                 fillRule="evenodd"
@@ -48,16 +48,16 @@ const DeleteUser = ({ user }) => {
               />
             </svg>
           </div>
-          <h5 className="text-center font-semibold text-2xl mb-2 text-red-500 md:px-20 px-2">
+          <h5 className="text-center font-semibold text-2xl mb-2 text-red-600 md:px-20 px-2">
             Are you sure?
           </h5>
-          <h6 className="text-center text-red-500">
+          <h6 className="text-center text-red-600">
             You want to delete this user?
           </h6>
           <div className="flex items-center justify-end gap-3 mt-4">
             <button
               onClick={(e) => onRemoveUser(e, user)}
-              className="border border-red-500 hover:bg-red-500 hover:text-white text-red-500 px-3 py-1 transition-all rounded focus:outline-none"
+              className="border border-red-600 hover:bg-red-600 hover:text-white text-red-600 px-3 py-1 transition-all rounded focus:outline-none"
             >
               Yes
             </button>
