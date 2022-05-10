@@ -13,7 +13,7 @@ const Users = () => {
     dispatch.users.fetchUsers();
   }, []);
 
-  const { users, loading } = useSelector((state) => state.users);
+  const { users = [], loading = true } = useSelector((state) => state.users);
 
   return (
     <>
